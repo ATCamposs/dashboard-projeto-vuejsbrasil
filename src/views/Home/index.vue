@@ -28,8 +28,8 @@ export default {
     function handleAccountCreate() {}
     return {
       handleLogin,
-      handleAccountCreate,
+      handleAccountCreate
     };
-  },
+  }
 };
 </script>
