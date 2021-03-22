@@ -23,14 +23,14 @@ import { reactive, onMounted, onBeforeUnmount, defineAsyncComponent } from 'vue'
 import useModal from '../../hooks/useModal';
 
 const ModalLogin = defineAsyncComponent(() => import('../ModalLogin'));
-const ModalAccountCreate = defineAsyncComponent(() => import('../ModalCreateAccount'));
+const ModalCreateAccount = defineAsyncComponent(() => import('../ModalCreateAccount'));
 
 const DEFAULT_WIDTH = 'w-3/4 lg:w-1/3';
 
 export default {
   components: {
     ModalLogin,
-    ModalAccountCreate,
+    ModalCreateAccount,
   },
   setup() {
     const modal = useModal();
