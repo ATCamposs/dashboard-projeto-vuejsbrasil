@@ -125,22 +125,6 @@ export default {
       }
     }
 
-    async function fetchFeedbacks() {
-      try {
-        state.isLoading = true;
-        const { data } = await services.feedbacks.getAll({
-          ...state.pagination,
-          type: state.currentFeedbackType,
-        });
-
-        state.feedbacks = data.results;
-        state.pagination = data.pagination;
-        state.isLoading = false;
-      } catch (error) {
-        handleErrors(error);
-      }
-    }
-
     async function changeFeedbacksType(type) {
       try {
         state.isLoadingFeedbacks = true;
@@ -155,6 +139,22 @@ export default {
         state.feedbacks = data.results;
         state.pagination = data.pagination;
         state.isLoadingFeedbacks = false;
+      } catch (error) {
+        handleErrors(error);
+      }
+    }
+
+    async function fetchFeedbacks() {
+      try {
+        state.isLoading = true;
+        const { data } = await services.feedbacks.getAll({
+          ...state.pagination,
+          type: state.currentFeedbackType,
+        });
+
+        state.feedbacks = data.results;
+        state.pagination = data.pagination;
+        state.isLoading = false;
       } catch (error) {
         handleErrors(error);
       }

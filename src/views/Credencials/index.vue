@@ -63,9 +63,10 @@
         <span v-if="state.hasError">Erro ao carregar o script</span>
         <pre v-else>
 &lt;script
+  defer
   async
   onload="init('{{ store.User.currentUser.apiKey }}')"
-  src="https://atcamposs-feedbacker-widget.netlify.app/init.js"
+  src="https://igorhalfeld-feedbacker-widget.netlify.app/init.js"
 &gt;&lt;/script&gt;
         </pre>
       </div>

@@ -48,9 +48,9 @@
 import { reactive } from 'vue';
 import Icon from '../Icon/index.vue';
 import Badge from './Badge.vue';
-import getDiffTimeBetweenCurrentDate from '../../utils/date';
+import { getDiffTimeBetweenCurrentDate } from '../../utils/date';
 import palette from '../../../palette';
-import wait from '../../utils/timeout';
+import { wait } from '../../utils/timeout';
 
 export default {
   components: { Badge, Icon },
