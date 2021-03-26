@@ -1,34 +1,24 @@
 # dashboard
 
-## Project setup
+## Setup do projeto (instalação)
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compilar para hot-reload
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilar e minificar para produção.
 ```
 npm run build
 ```
+### Imagens do projeto - Home
+![alt text](https://github.com/ATCamposs/dashboard-projeto-vuejsbrasil/blob/master/public/feedbacker-home.png?raw=true)
 
-### Run your unit tests
-```
-npm run test:unit
-```
+### Imagens do projeto - Entrar
+![alt text](https://github.com/ATCamposs/dashboard-projeto-vuejsbrasil/blob/master/public/feedbacker-entrar.png?raw=true)
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Imagens do projeto - Feedbacks
+![alt text](https://github.com/ATCamposs/dashboard-projeto-vuejsbrasil/blob/master/public/feedbacker-feedback.png?raw=true)
